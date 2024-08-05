@@ -35,7 +35,7 @@
 #define SUPPORT_MODULE_RSHAPES          1
 #define SUPPORT_MODULE_RTEXTURES        1
 #define SUPPORT_MODULE_RTEXT            1       // WARNING: It requires SUPPORT_MODULE_RTEXTURES to load sprite font textures
-#define SUPPORT_MODULE_RMODELS          1
+// #define SUPPORT_MODULE_RMODELS          1
 #define SUPPORT_MODULE_RAUDIO           1
 
 //------------------------------------------------------------------------------------
@@ -50,22 +50,22 @@
 // Mouse gestures are directly mapped like touches and processed by gestures system
 #define SUPPORT_MOUSE_GESTURES          1
 // Reconfigure standard input to receive key inputs, works with SSH connection.
-#define SUPPORT_SSH_KEYBOARD_RPI        1
+// #define SUPPORT_SSH_KEYBOARD_RPI        1
 // Setting a higher resolution can improve the accuracy of time-out intervals in wait functions.
 // However, it can also reduce overall system performance, because the thread scheduler switches tasks more often.
 #define SUPPORT_WINMM_HIGHRES_TIMER     1
 // Use busy wait loop for timing sync, if not defined, a high-resolution timer is set up and used
 //#define SUPPORT_BUSY_WAIT_LOOP          1
 // Use a partial-busy wait loop, in this case frame sleeps for most of the time, but then runs a busy loop at the end for accuracy
-#define SUPPORT_PARTIALBUSY_WAIT_LOOP    1
+// #define SUPPORT_PARTIALBUSY_WAIT_LOOP    1
 // Allow automatic screen capture of current screen pressing F12, defined in KeyCallback()
-#define SUPPORT_SCREEN_CAPTURE          1
+// #define SUPPORT_SCREEN_CAPTURE          1
 // Allow automatic gif recording of current screen pressing CTRL+F12, defined in KeyCallback()
-#define SUPPORT_GIF_RECORDING           1
+// #define SUPPORT_GIF_RECORDING           1
 // Support CompressData() and DecompressData() functions
-#define SUPPORT_COMPRESSION_API         1
+// #define SUPPORT_COMPRESSION_API         1
 // Support automatic generated events, loading and recording of those events when required
-#define SUPPORT_AUTOMATION_EVENTS       1
+// #define SUPPORT_AUTOMATION_EVENTS       1
 // Support custom frame control, only for advanced users
 // By default EndDrawing() does this job: draws everything + SwapScreenBuffer() + manage frame timing + PollInputEvents()
 // Enabling this flag allows manual control of the frame processes, use at your own risk
@@ -159,11 +159,11 @@
 #define SUPPORT_FILEFORMAT_PNG      1
 //#define SUPPORT_FILEFORMAT_BMP      1
 //#define SUPPORT_FILEFORMAT_TGA      1
-//#define SUPPORT_FILEFORMAT_JPG      1
-#define SUPPORT_FILEFORMAT_GIF      1
-#define SUPPORT_FILEFORMAT_QOI      1
+#define SUPPORT_FILEFORMAT_JPG      1
+// #define SUPPORT_FILEFORMAT_GIF      1
+// #define SUPPORT_FILEFORMAT_QOI      1
 //#define SUPPORT_FILEFORMAT_PSD      1
-#define SUPPORT_FILEFORMAT_DDS      1
+// #define SUPPORT_FILEFORMAT_DDS      1
 //#define SUPPORT_FILEFORMAT_HDR      1
 //#define SUPPORT_FILEFORMAT_PIC          1
 //#define SUPPORT_FILEFORMAT_KTX      1
@@ -173,12 +173,12 @@
 //#define SUPPORT_FILEFORMAT_SVG      1
 
 // Support image export functionality (.png, .bmp, .tga, .jpg, .qoi)
-#define SUPPORT_IMAGE_EXPORT            1
+// #define SUPPORT_IMAGE_EXPORT            1
 // Support procedural image generation functionality (gradient, spot, perlin-noise, cellular)
-#define SUPPORT_IMAGE_GENERATION        1
+// #define SUPPORT_IMAGE_GENERATION        1
 // Support multiple image editing functions to scale, adjust colors, flip, draw on images, crop...
 // If not defined, still some functions are supported: ImageFormat(), ImageCrop(), ImageToPOT()
-#define SUPPORT_IMAGE_MANIPULATION      1
+// #define SUPPORT_IMAGE_MANIPULATION      1
 
 
 //------------------------------------------------------------------------------------
@@ -189,7 +189,7 @@
 #define SUPPORT_DEFAULT_FONT            1
 // Selected desired font fileformats to be supported for loading
 #define SUPPORT_FILEFORMAT_TTF          1
-#define SUPPORT_FILEFORMAT_FNT          1
+// #define SUPPORT_FILEFORMAT_FNT          1
 //#define SUPPORT_FILEFORMAT_BDF          1
 
 // Support text management functions
@@ -212,32 +212,32 @@
 // Module: rmodels - Configuration Flags
 //------------------------------------------------------------------------------------
 // Selected desired model fileformats to be supported for loading
-#define SUPPORT_FILEFORMAT_OBJ          1
-#define SUPPORT_FILEFORMAT_MTL          1
-#define SUPPORT_FILEFORMAT_IQM          1
-#define SUPPORT_FILEFORMAT_GLTF         1
-#define SUPPORT_FILEFORMAT_VOX          1
-#define SUPPORT_FILEFORMAT_M3D          1
+// #define SUPPORT_FILEFORMAT_OBJ          1
+// #define SUPPORT_FILEFORMAT_MTL          1
+// #define SUPPORT_FILEFORMAT_IQM          1
+// #define SUPPORT_FILEFORMAT_GLTF         1
+// #define SUPPORT_FILEFORMAT_VOX          1
+// #define SUPPORT_FILEFORMAT_M3D          1
 // Support procedural mesh generation functions, uses external par_shapes.h library
 // NOTE: Some generated meshes DO NOT include generated texture coordinates
-#define SUPPORT_MESH_GENERATION         1
+// #define SUPPORT_MESH_GENERATION         1
 
 // rmodels: Configuration values
 //------------------------------------------------------------------------------------
-#define MAX_MATERIAL_MAPS              12       // Maximum number of shader maps supported
-#define MAX_MESH_VERTEX_BUFFERS         7       // Maximum vertex buffers (VBO) per mesh
+// #define MAX_MATERIAL_MAPS              12       // Maximum number of shader maps supported
+// #define MAX_MESH_VERTEX_BUFFERS         7       // Maximum vertex buffers (VBO) per mesh
 
 //------------------------------------------------------------------------------------
 // Module: raudio - Configuration Flags
 //------------------------------------------------------------------------------------
 // Desired audio fileformats to be supported for loading
 #define SUPPORT_FILEFORMAT_WAV          1
-#define SUPPORT_FILEFORMAT_OGG          1
+// #define SUPPORT_FILEFORMAT_OGG          1
 #define SUPPORT_FILEFORMAT_MP3          1
-#define SUPPORT_FILEFORMAT_QOA          1
+// #define SUPPORT_FILEFORMAT_QOA          1
 //#define SUPPORT_FILEFORMAT_FLAC         1
-#define SUPPORT_FILEFORMAT_XM           1
-#define SUPPORT_FILEFORMAT_MOD          1
+// #define SUPPORT_FILEFORMAT_XM           1
+// #define SUPPORT_FILEFORMAT_MOD          1
 
 // raudio: Configuration values
 //------------------------------------------------------------------------------------
